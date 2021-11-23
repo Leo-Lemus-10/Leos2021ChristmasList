@@ -2,12 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import backgroundList from './backgroundList.jpg';
+import backMusic from './backMusic.mp3'
 
 function App() {
   return (
     <div className="App" >
-      <h1>Test Git</h1>
+      
+      <audio controls loop src={backMusic}>
+      </audio>
     </div>
   );
 }

@@ -1,21 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import backMusic from './backMusic.mp3'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
+import backMusic from './backMusic.mp3';
 import HomePage from './HomePage';
+import MainPage from './MainPage';
 
 function App() {
+  
+  
   return (
     <div className="App" >
-      <Router>
+      <div className="snow"></div>
+        <Router>
         <Switch>
-        <Route exact path ='/'>
-          <HomePage/>
-        </Route>
+          <Route exact path ='/'>
+            <HomePage />
+          </Route>
+          <Route path ='/mainpage'>
+            <MainPage/>
+          </Route>
         </Switch>
-      </Router>
-      <audio controls loop src={backMusic}>
+        </Router>
+      <audio controls autoPlay loop src={backMusic} id="music">
       </audio>
     </div>
   );

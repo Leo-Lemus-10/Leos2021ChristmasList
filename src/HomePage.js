@@ -3,8 +3,9 @@ import PropTypes from 'prop-types'
 
 const HomePage = props => {
     return (
-        <div>
-            
+        <div className="HomePage">
+            <h1 className="Home-title">Leo's Christmas List</h1>
+            <button>Enter</button>
         </div>
     )
 }

@@ -111,6 +111,41 @@ border-radius: 25px;
 	
 }
 
+.wishlist {
+	background-color: cornflowerblue;
+	width: 94%;
+	margin-left: 2.5%;
+border-radius: 25px;
+	border: 2px solid darkblue;
+}
+.scroll {
+	background-color: cornflowerblue;
+	width: 94%;
+	margin-left: 2.5%;
+	border-radius: 25px;
+	border: 2px solid darkblue;
+}
+
+h2{
+	font-family: 'Apple Chancery';
+	font-size: 30px;
+	color: blue;
+  -webkit-text-stroke: .001px black;
+  margin: 5px;
+}
+
+h3 {
+	margin: 5px;
+}
+
+p {
+	margin: 5px;
+}
+
+h5 {
+	margin: 5px;
+}
+
 
 
 $d: 70;      // density

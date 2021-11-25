@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App" >
       <div className="snow"></div>
-        <Router>
+      <Router>
         <Switch>
           <Route exact path ='/'>
             <HomePage />
@@ -22,9 +22,11 @@ function App() {
             <MainPage/>
           </Route>
         </Switch>
-        </Router>
+      </Router>
+      <div className="audio-container">
       <audio controls autoPlay loop src={backMusic} id="music">
       </audio>
+      </div>
     </div>
   );
 }
